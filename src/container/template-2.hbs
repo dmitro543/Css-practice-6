@@ -1,0 +1,92 @@
+<div class="page">
+    <div class="page-content">
+      <div class="page-block"> 
+        <header class="head row">
+          <div class="col-3">
+             {{> logo}}
+          </div>
+          
+          <nav class="header-nav col-9">
+            <div class="header-nav-right">
+               {{>nav list=header}}
+            </div>
+          </nav>
+        </header>
+        <div class="divider"></div>
+      </div>
+       
+      <div class="page-block">
+        <div class="heros">
+          {{> hero data=hero}}
+          <a href="/hero.button.url" class="button">{{hero.button.text}}</a>
+        </div>
+      </div>
+
+     <div class="page-block">
+        <div class="row g-4">
+            {{#each preview}}
+               <div class="col-6">
+                  {{> cardPreview data=this}}
+               </div>
+            {{/each}}
+        </div>
+     </div>
+
+     <main class="page-block">
+        <div class="main">
+            <div class="row g-0">
+              <div class="col-12">
+                <div class="list-head">
+                  <div class="row g-0">
+                    <div class="col-6">
+                      <h2 class="list">list of posts</h2>
+                    </div>
+                    <div class="col-6">
+                      <div class="category-list">
+                        {{#each categories}}
+                          <button class="button-1">{{text}}</button>
+                        {{/each}}
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-7">
+                 {{#each news}}
+                    {{> cardPost data=this}}
+                 {{/each}}
+              </div>
+
+              <div class="col-5">
+                <aside class="list-aside">
+                    <div class="about">
+                        <h4 class="about-1">About</h4>
+                        <p class="about-2">{{about}}</p>
+                    </div>
+  
+                    {{> linkList data=archive title="Archives"}}
+                    {{> linkList data=social title="Social"}}
+                </aside>
+              </div>
+            </div>
+        </div>
+     </main>
+
+      <div class="page-block"> 
+          <div class="divider"></div>
+          <footer class="header row">
+            <div class="col-3">
+              {{> logo}}
+              <span class="footer-1">Coppyright 2023-2024</span>
+            </div>
+
+            {{#each footer}}
+              <div class="col-3">
+                 <span class="footer-title">{{title}}</span>
+                 {{>nav list=links isVertical=true}}
+              </div>
+            {{/each}}
+          </footer>
+      </div>
+    </div>
+</div>

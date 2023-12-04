@@ -1,0 +1,289 @@
+.page {
+    background: #fff;
+    padding: 0 15px;
+ }
+ 
+ .page-content {
+   max-width: 960px;
+   margin: 0 auto;
+ }
+ 
+ .head{
+    padding: 24px;
+ }
+ 
+ .logo {
+    font-size: 17px;
+ }
+ 
+ .divider {
+   margin: 0;
+   height: 1px;
+   background: #dee2e6;
+ }
+ 
+ .nav {
+ 
+ }
+ 
+ .nav-link {
+   color: #343a40;
+   font-size: 16px;
+   text-decoration: none;
+ }
+ 
+ .nav-link:hover {
+   text-decoration: underline;
+   color: blue;
+ }
+ 
+ .nav-vertical > .nav-link {
+   display: block;
+ }
+ 
+ .nav-inline > .nav-link:not(:last-child) {
+   margin-right: 24px;
+ }
+ 
+ .nav-vertical > .nav-link:not(:last-child) {
+   margin-bottom: 12px;
+ }
+ 
+ .header-nav-right {
+   margin-left: auto;
+   width: fit-content;
+ }
+ 
+ .page-block:not(:last-child){
+   margin-bottom: 80px;
+ }
+ 
+ .header {
+   padding: 24px 0;
+ }
+ 
+ .footer-1 {
+   font-size: 14px;
+   color: #6c757d;
+   display: block;
+   margin-top: 12px;
+ }
+ 
+ .footer-title {
+   font-size: 20px;
+   color: #212529;
+   display: inline-block;
+   margin-bottom: 12px;
+ }
+ 
+ .title {
+   font-size: 56px;
+   color: #fff;
+   font-weight: 400;
+   margin-bottom: 12px;
+ }
+ 
+ .text {
+   color: #fff;
+   font-size: 20px;
+   max-width: 585px;
+ }
+ 
+ .heros {
+    background: #343a40;
+    border-radius: 24px;
+    padding: 80px;
+ }
+
+ .button {
+    text-decoration: none;
+    color: #fff;
+    display: inline-block;
+    font-size: 16px;
+    padding: 10px 20px;
+    max-width: 248px;
+    width: 100%;
+    background: #007dff;
+    border-radius: 4px;
+    text-align: center;
+ }
+
+ .button:hover {
+    background: #319588;
+ }
+
+ .previewed {
+    padding: 24px;
+    border-radius: 24px;
+    border: 1px solid #dee2e6;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.05s);
+ }
+
+ .preview >span:not(:last-of-type) {
+    margin-right: 12px;
+ }
+
+ .date {
+    color: #6c757d;
+    font-size: 16px;
+ }
+
+ .category {
+    font-size: 16px;
+ }
+
+ .previewed >*:not(:last-child) {
+    margin-bottom: 12px;
+ }
+
+ .previews {
+    display: block;
+    color: #343a40;
+    font-weight: 500;
+    font-size: 28px;
+ }
+
+ .preview-description {
+    color: #212529;
+    font-size: 16px;
+ }
+
+ .preview-category-1 {
+    color: #007dff;
+ }
+
+ .preview-category-2 {
+    color: #198754;
+ }
+
+ .preview-category-3 {
+    color: #ff0000;
+ }
+
+ .preview-category-4 {
+    color: #ff7a00;
+ }
+
+ .list {
+    font-weight: 500;
+    font-size: 32px;
+    color: #212529;
+    margin: 0;
+ }
+
+ .list-head {
+    padding-bottom: 12px;
+    border-bottom: 1px solid #dee2e6;
+    margin-bottom: 40px;
+ }
+
+ .button-1 {
+    font-size: 16px;
+    color: #6c757d;
+    padding: 10px 16px;
+    border-radius: 40px;
+    border: 1px solid #dee2e6;
+    line-height: 100%;
+ }
+
+ .button-1:hover {
+    background: #6c757d0c;
+ }
+
+ .list-button {
+   margin-right: 40px;
+ }
+
+ .list-aside {
+    margin-left: 40px;
+ }
+
+ .category-list {
+    text-align: right;
+ }
+
+ .list-button > *:not(:last-child) {
+    margin-bottom: 40px;
+ }
+
+ .post {
+    padding-bottom: 12px;
+    border-bottom: 1px solid #dee2e6;
+ }
+
+ .post > *:not(:last-child){
+    margin-bottom: 12px;
+ }
+
+ .post-1{
+   display: block;
+   font-size: 27px;
+   font-weight: 500;
+   color: #212529;
+ }
+
+ .post-2{
+   color: #999999;
+   font-weight: 400;
+   font-size: 16px;
+ }
+
+ .post-3 {
+   color: #0050ff;
+ }
+
+ .post-4 {
+   font-weight: 400;
+   font-size: 16px;
+   color: #212529;
+ }
+
+ .list-aside > *:not(:last-child) {
+    margin-bottom: 24px;
+ }
+
+ .about {
+    background: #f8f9fa;
+    padding: 24px;
+ }
+
+ .about-1 {
+   color: #212529;
+   font-weight: 500;
+   font-size: 28px;
+ }
+
+ .about-2 {
+    color: #212529;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 170%;
+  }
+
+  .link {
+    padding: 24px;
+  }
+
+  .link-list{
+    display: block;
+    font-weight: 500;
+    font-size: 24px;
+    color: #212529;
+  }
+
+  .link >*:not(:last-child) {
+    margin-bottom: 12px;
+  }
+
+  .link-title {
+    display: block;
+    font-weight: 400;
+    font-size: 16px;
+    text-decoration: none;
+    color: #007dff;
+  }
+
+  .link-title:hover {
+    text-decoration: underline;
+  }
+
