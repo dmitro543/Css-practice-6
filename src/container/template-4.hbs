@@ -1,0 +1,50 @@
+<div class="page-content">
+    <header class="header">
+      <div>
+        {{> logo}}
+      </div>
+
+      <nav class="header-nav">
+         <div class="header-nav-right">
+         {{>nav list=header}}
+         </div>
+      </nav>
+    </header>
+
+    {{#with main}}
+       <div class="hero-1">
+         <img src="{{image}}" alt="Hero image" class="photo">
+         <div class="content">
+           <h1 class="title">{{heading}}</h1>
+           <p class="text">{{description}}</p>
+           <a href="{{href}}" class="active-button-2">{{button}}</a>
+         </div>
+       </div>
+    {{/with}}
+
+    <div class="hero-2">
+      {{#each featured}}
+         {{> cardBlog-2 data=this}}
+      {{/each}}
+    </div>
+
+    <div class="hero-3">
+      {{#each actions}}
+        {{> action-2 data=this}}
+      {{/each}}
+    </div>
+
+    <footer class="footer">
+      <div>
+        {{> logo}}
+        <span class="footer-copy">Coppyright 2023-2024</span>
+      </div>
+
+      {{#each footer}}
+          <div class="">
+              <span class="footer-title">{{title}}</span>
+              {{>nav list=links isVertical=true}}
+          </div>
+      {{/each}}
+    </footer>
+</div>
