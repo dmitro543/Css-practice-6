@@ -1,0 +1,381 @@
+/*======================*/ 
+.page {
+    background: #ffffff;
+    padding: 0 15px;
+    justify-content: center;
+    display: flex;
+  }
+  
+  .page_content {
+    max-width: 960px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+  }
+  
+  /*========================*/
+  
+  .header {
+    padding: 24px;
+    border-bottom: 1px solid #dee2e6;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .header-logo {
+    font-size: 17px;
+    background: blueviolet;
+    color: #fff;
+    width: 24px;
+    height: 24px;
+    border-radius: 6px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .picture {
+    margin: 0;
+    height: 1px;
+    background: #dee2e6;
+  }
+  
+  .nav {
+    display: block;
+    font-family: sans-serif;
+  }
+  
+  .nav_link {
+     color: #343a40;
+     font-size: 16px;
+     text-decoration: none;
+     line-height: 170%;
+  }
+  
+  .nav_link:hover {
+    text-decoration: underline;
+    color: blue;
+  }
+  
+  .nav_vertical > .nav_link {
+    display: block;
+  }
+  
+  .nav_inline > .nav_link:not(:last-child) {
+     margin-right: 24px;
+  }
+  
+  .nav_vertical > .nav_link:not(:last-child) {
+    margin-bottom: 12spx;
+  }
+  
+  .header-nav-right {
+    margin-left: auto;
+    width: fit-content;
+  }
+  
+  .page-block:not(:last-of-type) {
+     margin-bottom: 80px;
+  }
+  
+  .footer {
+    padding: 24px 0;
+    border-top: 1px solid #dee2e6;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .footer-copy {
+    font-size: 14px;
+    color: #6c757d;
+    display: block;
+    margin-top: 24px;
+  }
+  
+  .footer-title {
+    font-size: 20px;
+    color: #212529;
+    display: block;
+    margin-bottom: 20px;
+    font-family: sans-serif;
+  }
+  
+  
+  .main {
+    display: flex;
+    width: 100%;
+    gap: 40px;
+    font-family: sans-serif;
+    align-items: flex-start;
+  }
+
+  .messages {
+    max-width: 620px;
+    width: 100%;
+    font-weight: 500;
+    border-radius: 12px;
+    background-color: #fff;
+    display: block;
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  .picture-title {
+    font-size: 36px;
+    font-weight: 700;
+    padding-bottom: 12px;
+    border-bottom: 1px solid #d3dee9;
+    text-align: center;
+    width: 70%;
+  }
+  
+  .form {
+    max-width: 340px;
+    width: 120%;
+    background: #fff;
+    border-radius: 12px;
+    background-color: #3934400a;
+    padding: 12px;
+    box-shadow: 0px 4px 17px rgba(255, 255, 255, 1);
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    font-family: sans-serif;
+  }
+
+  .link {
+    color:rgb(0, 132, 255);
+    align-self: flex-end;
+    font-size: 14px;
+    transition-duration: 0.7s;
+    transition-property: opacity, border-color;
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+  }
+
+  .link:hover {
+    opacity: 0.7;
+    border-color: rgb(0, 21, 255);
+  }
+
+  .mg {
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding-bottom: 12px;
+    border-bottom: 1px solid #d3dee9;
+    position: relative;
+    padding-right: 36px;
+  }
+
+  .mg-title {
+    font-weight: bold;
+    font-size: 16px;
+    color: #343a40;
+  }
+
+  .mg-text {
+    font-weight: 500;
+    font-size: 18px;
+    color: #343a40;
+    width: 60%;
+    padding: 12px;
+    text-align: center;
+  }
+
+  .day {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+  .adventure {
+    font-family: sans-serif;
+    display: flex;
+    gap: 24px;
+  }
+
+  .adventure-1 {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #e4eaf2;
+    border-radius: 12px;
+    padding: 24px;
+    gap: 8px;
+    width: 100%;
+  }
+
+  .adventure-1:nth-of-type(2) {
+     flex-grow: 1;
+     width: 100%;
+  }
+
+  .adventure-title {
+    font-weight: 600;
+    color: #212529;
+    font-size: 18px;
+  }
+
+  .adventure-text {
+    color: #767676;
+    font-size: 16px;
+    line-height: 150%;
+  }
+
+  .form-1 {
+    text-align: center;
+    font-size: 24px;
+    font-weight: 600;
+    color: #212529;
+  }
+
+  .form-2 {
+    text-align: center;
+    font-size: 18px;
+    font-weight: 500;
+    color: #6c757d;
+  }
+
+  .form-3 {
+    text-align: center;
+    padding: 12px;
+    background-color: blue;
+    color: #fff;
+    border-radius: 4px;
+    transition: opacity 0.7s;
+  }
+
+  .form-3:hover {
+    opacity: 0.7;
+  }
+
+  .form-3:active {
+    opacity: 0.3;
+  }
+
+  .input-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .input {
+    padding: 16px;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+  }
+
+  .input::placeholder {
+    color: #212529;
+    font-size: 16px;
+  }
+
+  .checkbox-block {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+  }
+
+  .checkbox-label {
+    font-weight: 500;
+    font-size: 16px;
+    color: #212529;
+  }
+
+  .checkbox-block > input {
+    border: 1px solid #767676;
+    border-radius: 4px;
+    display: none; 
+  }
+
+  .checkbox-block > input ~ div {
+    border: 1px solid #767676;
+    border-radius: 4px;
+    height: 13px;
+    width: 13px;
+  }
+
+  .checkbox-block > input:checked ~ div {
+    border-color: blue;
+    background-color: blue;
+  }
+
+  .adventure-title {
+    max-width: 340px;
+    width: 100%;
+    border-radius: 12px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    font-family: sans-serif;
+    font-size: 24px;
+  }
+  
+  .adventure-picture {
+    display: flex;
+    gap: 24px;
+  }
+ 
+  .picture-3 {
+    font-family: sans-serif;
+    font-weight: 700;
+    font-size: 36px;
+  }
+
+  .adventure-title-2 {
+    font-weight: 700;
+  }
+
+  .adventure-main {
+    color: #fff;
+    display: flex;
+    gap: 24px;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #e4eaf2;
+    border-radius: 12px;
+    padding: 24px;
+    gap: 8px;
+    width: 100%;
+    background: #212529;
+    font-family: sans-serif;
+  }
+
+  .paddi {
+    background-color: #7676760b;
+    border-radius: 12px;
+    padding: 12px;
+  }
+
+  .paddi-main {
+    display: flex;
+  }
+
+  .paddi-2 {
+    font-size: 17px;
+    background: rgba(255, 115, 71, 1);
+    color: #fff;
+    width: 90px;
+    height: 53px;
+    border-radius: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 32px;
+  }
+
+  .clas {
+    display: flex;
+  }
+
+  .cool:not(:last-child) {
+    background: blue;
+    padding: 8px;
+  }
+
+  .id {
+    color: rgba(0, 17, 255, 0.677);
+  }
