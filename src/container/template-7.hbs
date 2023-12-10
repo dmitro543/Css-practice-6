@@ -1,0 +1,88 @@
+<div class="page-main">
+  <div class="page_content">
+    <header class="header">
+      {{#with header}}
+         <div class="header-logo">{{brandName}}</div>
+         <div class="link">
+           {{#each links}}
+             <a href="{{url}}" class="link-1">{{text}}</a>
+           {{/each}}
+         </div>
+      {{/with}}
+    </header>
+      <div class="dividi">
+         <div class="divider"></div>
+      </div>
+      <div class="paddi">
+         <span class="logo">AD</span>
+         <div class="paddi-text">
+           {{#with header}}
+             {{#with ad}}
+               <a href="{{url}}" class="nav-class">{{text}}</a>
+             {{/with}}
+               <div class="margin">
+                 <p>userOnline{{userOnline}}</p>
+               </div>
+           {{/with}}
+         </div>
+      </div>
+
+        <div class="about-main">
+             <div class="hero-main">
+                {{#with hero}}
+                  <h1 class="hero-header">{{title}}</h1>
+                  <p class="description">{{description}}</p>
+                 {{#with button}}
+                   <a href="{{url}}" class="button">{{text}}</a>
+                 {{/with}}
+                {{/with}}
+              </div>
+        </div>
+       
+
+        <div class="about-class">
+          <div class="about">
+            {{#with about}}
+               <h2 class="about-header">{{heading}}</h2>
+               <p class="about-info">{{info}}</p>
+             {{/with}}
+          </div>
+        </div>
+
+        <div class="avenger">
+           <div class="avenger-main">Our Articles</div>
+           <div class="avenger-button">View All</div>
+        </div>
+
+        <div class="apple">
+          {{#each articles}}
+             <img src="{{photo}}" alt="" class="apple-img">
+          {{/each}}
+        </div>
+
+        <div class="adventure">
+           {{#each articles}}
+             <div class="adventure-1">
+               <strong class="adventure-title">{{name}}</strong>
+               <p class="adventure-text">{{description}}</p>
+               <a href="" class="read">Read Alls</a>
+             </div>
+           {{/each}}
+        </div>
+        
+        <div class="dividi">
+          <div class="divider"></div>
+        </div>
+
+    <header class="header">
+      {{#with footer}}
+         <div class="link">
+           {{#each pages}}
+             <a href="{{path}}" class="link-1">{{name}}</a>
+           {{/each}}
+         </div>
+         <div class="header-log">{{copyright}}</div>
+      {{/with}}
+    </header>
+  </div>
+</div>
