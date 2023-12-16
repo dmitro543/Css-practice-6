@@ -1,137 +1,229 @@
-.function {
-    
-}
 
-.function {
-    padding-top: 150px;
-    padding-bottom: 150px;
-    display: grid;
-    gap: var(--spacing-5);
-    font-weight: 700;
-  }
+<!DOCTYPE html>
+<html>
 
-  .page-section {
-    background-color: var(--color-light);
-  }
+	<head>
+		<title>
+			Deashboard page
+		</title>
+		<meta charset='utf-8' />
 
-  .feature-card {
-     padding: var(--spacing-3);
-     background-color: var(--color-white);
-     gap: var(--spacing-3);
-     font-size: var(--size-2);
-     line-height: var(--line-height);
-     display: grid;
-     grid-template-rows: min-content min-content 1fr min-content;
-  }
+		<link href='css/normalize.css' rel='stylesheet' />
 
-  .function-title {
-    font-size: var(--size-6);
-  }
+		<link href='css/dashboard.css' rel='stylesheet' />
 
-  .function-description {
-    font-size: var(--size-2);
-    max-width: 680px;
-    width: 100%;
-  }
+     <meta name="viewport" content="viewport-fit=cover, width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-  .feature-title {
-    font-size: 20px;
-  }
+	</head>
 
-  .feature-link {
-    justify-self: flex-end;
-    transition: opacity var(--transition-1);
-  }
-
-  .feature-link:hover {
-    opacity: var(--opacity-1);
-    cursor: pointer;
-   }
-
-  .feature-link:active {
-    opacity: var(--opacity-2);
-   }
-
-@layer component {
-    .icon {
-        display: block;
-        background-position: center center;
-    }
-}
-
-@layer variant {
-    .feature-icon {
-        width: 48px;
-        height: 48px;
-    }
-
-    .icon-arrow {
-        height: 14px;
-        width: 24px;
-        background-image: url('/svg/arrow-right.svg');
-    }
-}
-
-.features-block {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    gap: var(--spacing-2);
-}
-
-.features-block > .feature-card:first-of-type {
-    grid-row: 1 / 3;
-}
-
-.features-image {
-    max-width: 400px;
-    width: 100%;
-    background-repeat: no-repeat;
-    position: absolute;
-    left: 980px;
-}
-
-.cool {
-    background: #F4EDE4;
-
-}
-
-.cool-description {
-    color: #000;
-    font-family: sans-serif;
-    font-size: 18px;
-    position: absolute;
-    right: 0;
-    display: flex;
-    flex-direction: column;
-    max-width: 1400px;
-    width: 300%;
-    padding: 80px 120px 400px 500px;
-    padding-top: 130px;
-    padding-left: 680px;
-}
-
-.position {
-    padding-right: 500px;
-    padding-top: 130px;
-    font-size: 32px;
-    display: flex;
-    padding: 80px 200px 136px 345px;
-}
-
-.cool-main {
-    display: flex;
-}
-
-.right {
-    display: block;
-}
-
-.adventure {
-    width: 300px;
-    height: 250px;
-    background: #FFF;
-    box-shadow: 0px 0px 32px 0px rgba(0, 0, 0, 0.10);
-    padding: 40px;
-}
-
+	<body>
+        <div class="page page-dashboard">
+			<aside class="page-class aside vertical">
+				<div class="picture-logo">
+					Sidebar
+				</div>
+		        <nav class="vertical vertical--small">
+					<a href="#" class="menu-botton button-active adaptive">
+						<span class="icon icon-menu" style="background-image: url(/svg/home.svg);"></span>
+						<span class="text text--line text--light">Home</span>
+					</a>
+				    <a href="#" class="menu-botton adaptive">
+						<span class="icon icon-menu" style="background-image: url(/svg/rename.svg);"></span>
+						<span class="text text--line text--light">Orders</span>
+					</a>
+					<a href="#" class="menu-botton adaptive">
+						<span class="icon icon-menu" style="background-image: url(/svg/products.svg);"></span>
+						<span class="text text--line text--light">Products</span>
+					</a>
+				</nav>
+			</aside>
+			<header class="page-head">
+				<div class="conteiner head-content text--small">
+					<div class="search">
+                        <input type="text" placeholder="Search" class="face field">
+						<span class="icon icon-search" style="background-image: url(/svg/search.svg);"></span>
+						<span class="icon icon-settings icon-button icon-color adaptive" style="background-image: url(/svg/logo.svg);"></span>
+					</div>
+					<div class="flex-main-2 adaptive">
+						<div class="tom">
+						  <span class="shield adaptive" style="background-image: url(/svg/icon-cool.svg);"></span>
+					    </div>
+						<div class="tom-2">
+						  <span class="shield adaptive" style="background-image: url(/svg/right.svg);"></span>
+					    </div>
+						<div class="tom">
+						  <span class="shield adaptive" style="background-image: url(/svg/main.svg);"></span>
+					    </div>
+					</div>
+				</div>
+			</header>
+			<main class="page-main">
+				<div class="conteiner">
+					<section class="box politic-block">
+						<div class="politic politic-dooble politic-blue">
+							<span class="icon politic-button icon-button color-dark adaptive" style="background-image: url(/svg/order.svg);"></span>
+							<div class="politic-content vertical vertical--small">
+								<div class="politic-title text text--light">$500.00</div>
+								<div class="politic-info text--small text--lighter">Total earning</div>
+								<span class="icon politic-arrow adaptive" style="background-image: url(/svg/blue-arrow.svg);"></span>
+							</div>
+						</div>
+						
+						<div class="politic politic-dooble politic-purple">
+							<div class="foot">
+							  <span class="icon politic-margin icon-button adaptive" style="background-image: url(/svg/total.svg);"></span>
+							</div>
+							<div class="politic-content vertical vertical--small">
+								<div class="politic-title text text--light">$961</div>
+								<div class="politic-info text--small text--lighter">Total Order</div>
+							</div>
+						</div>
+						<div class="politic politic-purple">
+							<div class="footer">
+							   <div class="footbool">
+							      <span class="icon politic-margin icon-button adaptive" style="background-image: url(/svg/order.svg);"></span>
+							   </div>
+							   <div class="footer-block">
+								 <div class="footer-title">$203k</div>
+							     <div class="footer-info">Total Income</div>
+							   </div>
+							</div>
+						</div>
+						<div class="politic politic-class">
+							<div class="footer">
+							   <div class="bascketball">
+							      <span class="icon politic-margin icon-button adaptive" style="background-image: url(/svg/box.svg);"></span>
+							   </div>
+							   <div class="footer-block">
+								 <div class="footer-cool">$203k</div>
+							     <div class="footer-description">Total Income</div>
+							   </div>
+							</div>
+						</div>
+				    </section>
+					<div class="kind-main">
+					  <div class="kind">
+					   <div class="house">Purchase list</div>
+					   <div class="divider"></div>
+						<div class="big-house">
+							<div class="house-id">
+                                <div class="true">ID437661</div>
+								<div class="house-text">May 11, 2023, 14:21</div>
+							</div>
+							<div class="house-id">
+                                <div class="true">AirOn ProCam</div>
+								<div class="house-text">7/8 USB Type-C</div>
+							</div>
+							<div class="house-id">
+                                <div class="true">132.32 EUR</div>
+								<div class="house-text">
+									<div class="robot">Not paid</div>
+								</div>
+							</div>
+							<div class="house-id">
+                                <div class="true">Customer</div>
+								<div class="house-text">robin@com.de</div>
+							</div>
+						</div>
+						<div class="big-house">
+							<div class="house-id">
+                                <div class="true">ID437661</div>
+								<div class="house-text">May 11, 2023, 14:21</div>
+							</div>
+							<div class="house-id">
+                                <div class="true">PHILIPS Essential</div>
+								<div class="house-text">HD9200/90</div>
+							</div>
+							<div class="house-id">
+                                <div class="true">543 USD</div>
+								<div class="house-text">
+									<div class="robot-2">Pay by  Stripe</div>
+								</div>
+							</div>
+							<div class="house-id">
+                                <div class="true">Customer</div>
+								<div class="house-text">dima@com.ua</div>
+							</div>
+						</div>
+					 </div>
+					 <div class="avengers">
+						<div class="avengers-2">
+						   <div class="house">Payment</div>
+						   <div class="divider-2"></div>
+						   <div class="check">
+							   <div class="form-check">
+                                   <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                                   <label class="form-check-label" for="flexRadioDefault1">Credit card</label>
+						        </div>
+						        <div class="form-check">
+                                   <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                                   <label class="form-check-label" for="flexRadioDefault1">Debit card</label>
+							    </div>
+							    <div class="form-check">
+                                   <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                                   <label class="form-check-label" for="flexRadioDefault1">PayPal</label>
+							    </div>
+						   </div>
+                           <div class="bill-cool">
+							  <div class="bill-main">
+						         <label for="#" class="bill">Name on card</label>
+							     <input type="text" class="chacked">
+						      </div>
+							  <div class="bill-main">
+						         <label for="#" class="bill">Credit card number</label>
+							     <input type="text" class="chacked">
+						      </div>
+						   </div>
+						   <div class="bill-cool">
+							  <div class="bill-main">
+						         <label for="#" class="bill">Expiration</label>
+							     <input type="text" class="chacked">
+						      </div>
+							  <div class="bill-main">
+						         <label for="#" class="bill">CVV</label>
+							     <input type="text" class="chacked">
+						      </div>
+						   </div>
+						   <div class="divider-2"></div>
+						   <div class="flex-main">
+							  <div class="flex">
+							    <label for="#" class="bill">Country</label>
+                                <div class="fold-block adaptive">
+				                  <div class="face click">
+					                <span class="text">Choose...</span>
+					                <select class="flip">
+						              <option value="dog"></option>
+						              <option value="cat"></option>
+						              <option value="hamster"></option>
+						              <option value="parrot"></option>
+						              <option value="spider"></option>
+					                </select>
+				                  </div>
+					            </div>
+							  </div>
+							  <div class="flex">
+							    <label for="#" class="bill">State</label>
+                                <div class="fold-block adaptive">
+				                  <div class="face click">
+					                <span class="text">Choose...</span>
+					                <select class="flip">
+						              <option value="dog"></option>
+						              <option value="cat"></option>
+						              <option value="hamster"></option>
+						              <option value="parrot"></option>
+						              <option value="spider"></option>
+					                </select>
+				                  </div>
+					            </div>
+							  </div>
+						   </div>
+						   <div class="divider-2"></div>
+						   <div class="button-text adaptive">Continue to checkout</div>
+						</div>
+					 </div>
+					</div>
+				</div>
+			</main>
+		</div>
+    </body>
+</html>        
